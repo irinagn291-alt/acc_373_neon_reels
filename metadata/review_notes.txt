@@ -1,0 +1,7 @@
+Neon Reels is an offline, single-player reel logic puzzle. The app interface is in English (UK); system controls may follow the device language. No account is required.
+
+To review, open Play and start the first puzzle or choose a room and level. Move reels with vertical swipes or the up and down arrows, match the centre row to the target and tap Check. Undo, Hint and Restart are available during play. At the move limit, undo or check to continue. A result sheet appears after a successful check or a check at the limit.
+
+Daily selects a level by UTC date. Album shows symbol collection progress, and Settings contains instructions, preferences and a confirmed local reset. Progress and preferences are stored locally. Small and medium Home Screen widgets display a shared progress snapshot and open the current standard-level puzzle.
+
+The app implements no runtime permission requests, network services, advertising, analytics, purchases, accounts or cloud sync.

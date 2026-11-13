@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	classes = {
+	};
+	objectVersion = 77;
+	archiveVersion = 1;
+	objects = {
+		543C84AAF5D3731DA752D603 /* NeonReels/WidgetBridge.swift */ = {
+			path = NeonReels/WidgetBridge.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		13FCBAD093C4DBA14B08BB4B /* PBXProject */ = {
+			buildConfigurationList = 45BA189E80C7665212978D6A /* XCConfigurationList */;
+			targets = (
+				CAA5F241485B89FDA2649761 /* NeonReels */,
+				37F8991CF493DCA0B8C72C06 /* NeonReelsTests */,
+				26CEBB94E391F3AED5EFE6CC /* NeonReelsUITests */,
+				3105C7F73A24E0763E6F6222 /* NeonReelsWidget */,
+				2D5664551DDF8A1C3D7C61E1 /* NeonReelsWidgetTests */,
+			);
+			minimizedProjectReferenceProxies = 1;
+			developmentRegion = "en-GB";
+			knownRegions = (
+				Base,
+				"en-GB",
+			);
+			isa = PBXProject;
+			productRefGroup = 54C763FB8665DCAA9BB85AE5 /* Products */;
+			projectDirPath = "";
+			attributes = {
+				LastUpgradeCheck = 1430;
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					26CEBB94E391F3AED5EFE6CC /* NeonReelsUITests */ = {
+						TestTargetID = CAA5F241485B89FDA2649761 /* NeonReels */;
+					};
+					CAA5F241485B89FDA2649761 /* NeonReels */ = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+						ProvisioningStyle = Automatic;
+					};
+					3105C7F73A24E0763E6F6222 /* NeonReelsWidget */ = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			hasScannedForEncodings = 0;
+			projectRoot = "";
+			preferredProjectObjectVersion = 77;
+			mainGroup = D06844E8245DD01D5C225821 /* PBXGroup */;
+		};
+		916B058BBBC729983D577DEB /* WidgetTests/WidgetIntegrationTests.swift */ = {
+			path = WidgetTests/WidgetIntegrationTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		2AB2FAFDCEB275D8227C4C53 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 916B058BBBC729983D577DEB /* WidgetTests/WidgetIntegrationTests.swift */;
+		};
+		D06844E8245DD01D5C225821 /* PBXGroup */ = {
+			isa = PBXGroup;
+			sourceTree = "<group>";
+			children = (
+				CA847C689516EE4E09CE4B53 /* NeonReels */,
+				ABFE8BA9F4AFE3213B447B68 /* NeonReelsTests */,
+				F310BFF10B0C38E7B5506211 /* NeonReelsUITests */,
+				54C763FB8665DCAA9BB85AE5 /* Products */,
+				909E3F249B938DC2BE1C38E0 /* Widgets */,
+				916B058BBBC729983D577DEB /* WidgetTests/WidgetIntegrationTests.swift */,
+				984585CCDBB308519DD036CC /* WidgetTests/WidgetTests.swift */,
+			);
+		};
+		9D995AB899B1DF27719CA819 /* NeonReels.app */ = {
+			path = NeonReels.app;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.application;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A43D8B636529AB41F37F5D21 /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7669D93CA2322CD38ECD7A55 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				9A862959B95E7D9DA041B783 /* Debug */,
+				83FA2006781298603E1AAADA /* Release */,
+			);
+		};
+		B21C2F5624992F9C59DD6EDD /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 9CB4A62666591B14E5A93F32 /* EngineTests.swift */;
+		};
+		D744165158BD566E2EAEA12F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAA5F241485B89FDA2649761 /* NeonReels */;
+			targetProxy = E2249365223C7E932A641760 /* PBXContainerItemProxy */;
+		};
+		632C5B65E8AAE28AE249C594 /* CollectionViews.swift */ = {
+			path = CollectionViews.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		AA4CD2A427D8CD23D67D61F9 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C781BEAD15DF589D92DC73D6 /* PBXBuildFile */,
+				C8E492511E13F2C4FDFC3A34 /* PBXBuildFile */,
+				D7ADD9937D61872D1DE75423 /* PBXBuildFile */,
+				6331099C8F40D3772741BB1F /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4A62666591B14E5A93F32 /* EngineTests.swift */ = {
+			path = EngineTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		4780FA5E0688B0CCBC31A851 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8BAF7A50038233D8244E1B /* PBXBuildFile */,
+				14F5BBF8A12C26400A800373 /* PBXBuildFile */,
+				515B0F65155DFC39C0BF0D74 /* PBXBuildFile */,
+				A19A0C5887664A5CC5CDF357 /* PBXBuildFile */,
+				B04DAE8CCF3D7CAAC56EFF59 /* PBXBuildFile */,
+				381130FA75C44E79969A686C /* PBXBuildFile */,
+				78610A7DC1FA8B9A1A7ECADC /* PBXBuildFile */,
+				F7FF71A4FBA36405E1E37DB3 /* PBXBuildFile */,
+				3AEA57A1EED14BDF2FDB76BA /* PBXBuildFile */,
+				CD9179139A659335F9F3AE6B /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12F984F426B2705B7267C21D /* JourneyTests.swift */ = {
+			path = JourneyTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		C4D6CE1473703CEA874EB539 /* PBXResourcesBuildPhase */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F23B9A14668A8B9C6BE869 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A553BE8B04E7CC01C95F1F /* PuzzleView.swift */ = {
+			path = PuzzleView.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		C8E492511E13F2C4FDFC3A34 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = ED1EA46CBA3366A33E386058 /* WidgetShared/WidgetIdentity.swift */;
+		};
+		58C5606EF4EDEB3D343601A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_COMMA = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 6.0;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				SDKROOT = iphoneos;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				CLANG_ENABLE_MODULES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ENABLE_TESTABILITY = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				GCC_DYNAMIC_NO_PIC = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			};
+			name = Debug;
+		};
+		0F9B320ED4F3B3CD1C020EF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FCBAD093C4DBA14B08BB4B /* PBXProject */;
+			remoteGlobalIDString = 3105C7F73A24E0763E6F6222 /* NeonReelsWidget */;
+			remoteInfo = NeonReelsWidget;
+			proxyType = 1;
+		};
+		9A862959B95E7D9DA041B783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.NeonReelsUITests;
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = NeonReels;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1EC3392E5DB08C38E0D73DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = NO;
+				CODE_SIGN_ENTITLEMENTS = Support/Widget.entitlements;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle.widget;
+			};
+		};
+		ED1EA46CBA3366A33E386058 /* WidgetShared/WidgetIdentity.swift */ = {
+			path = WidgetShared/WidgetIdentity.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		97660C63E1E98B687920D287 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				F5BF210650EFEFD707390630 /* Debug */,
+				BEC27F763EB06CDE42119376 /* Release */,
+			);
+		};
+		9D1E9F982B24607C1D4758C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAA5F241485B89FDA2649761 /* NeonReels */;
+			targetProxy = 3D5F8391EE8DEAEF33AC405B /* PBXContainerItemProxy */;
+		};
+		BE89C093CFAAAD0D6ED50A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CODE_SIGN_ENTITLEMENTS = Support/Widget.entitlements;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle.widget;
+			};
+		};
+		2D5664551DDF8A1C3D7C61E1 /* NeonReelsWidgetTests */ = {
+			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 2438AF64380FC50A66660092 /* NeonReelsWidgetTests.xctest */;
+			buildConfigurationList = 9194881E5F7184BCF3CE94A8 /* XCConfigurationList */;
+			productName = NeonReelsWidgetTests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				17ADC30AD30F4EBAEBC00BFE /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				D40B4A5BFFA34C2329531FF4 /* PBXTargetDependency */,
+			);
+			name = NeonReelsWidgetTests;
+			buildRules = (
+			);
+		};
+		E2249365223C7E932A641760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FCBAD093C4DBA14B08BB4B /* PBXProject */;
+			remoteGlobalIDString = CAA5F241485B89FDA2649761 /* NeonReels */;
+			remoteInfo = NeonReels;
+			proxyType = 1;
+		};
+		5FE714F503AC377351AF5B9A /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 58E9555E1F380DF98F5DFDB0 /* NeonReelsWidget.appex */;
+			settings = {
+				ATTRIBUTES = (
+					RemoveHeadersOnCopy,
+				);
+			};
+		};
+		F5BF210650EFEFD707390630 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeonReels.app/NeonReels";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.NeonReelsTests;
+				SDKROOT = iphoneos;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35ACA2E9A5FBE96BCC1EA5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			name = Debug;
+			buildSettings = {
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeonReels.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeonReels";
+				GENERATE_INFOPLIST_FILE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				CODE_SIGN_STYLE = Automatic;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle.widgettests;
+			};
+		};
+		14F5BBF8A12C26400A800373 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = EC187E1FAC4786C54BA5B04C /* Design.swift */;
+		};
+		54CF6BEA49E3ECA02E833591 /* Assets.xcassets */ = {
+			path = Assets.xcassets;
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			sourceTree = "<group>";
+		};
+		F310BFF10B0C38E7B5506211 /* NeonReelsUITests */ = {
+			path = NeonReelsUITests;
+			isa = PBXGroup;
+			children = (
+				12F984F426B2705B7267C21D /* JourneyTests.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		1D76A6166D81CB8F4BCBF5A3 /* NeonReelsUITests.xctest */ = {
+			path = NeonReelsUITests.xctest;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		909E3F249B938DC2BE1C38E0 /* Widgets */ = {
+			isa = PBXGroup;
+			name = Widgets;
+			children = (
+				E8F90B69721445B445DA47A8 /* WidgetShared/ProgressWidgetView.swift */,
+				ED1EA46CBA3366A33E386058 /* WidgetShared/WidgetIdentity.swift */,
+				88BBFFED9F5890567A8F2503 /* WidgetShared/WidgetSnapshot.swift */,
+				543C84AAF5D3731DA752D603 /* NeonReels/WidgetBridge.swift */,
+				94C1B9AC5F26D06C0B82D35C /* WidgetExtension/ProgressWidget.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		26CEBB94E391F3AED5EFE6CC /* NeonReelsUITests */ = {
+			productType = "com.apple.product-type.bundle.ui-testing";
+			productReference = 1D76A6166D81CB8F4BCBF5A3 /* NeonReelsUITests.xctest */;
+			buildConfigurationList = 7669D93CA2322CD38ECD7A55 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = NeonReelsUITests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				F3F193EE5F27C4D355AA4101 /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				D744165158BD566E2EAEA12F /* PBXTargetDependency */,
+			);
+			name = NeonReelsUITests;
+			buildRules = (
+			);
+		};
+		EC187E1FAC4786C54BA5B04C /* Design.swift */ = {
+			path = Design.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		52BB2AEBFFD2DB476EFEC822 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 12F984F426B2705B7267C21D /* JourneyTests.swift */;
+		};
+		3AEA57A1EED14BDF2FDB76BA /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 88BBFFED9F5890567A8F2503 /* WidgetShared/WidgetSnapshot.swift */;
+		};
+		5D0BD9CCF8CF5FEFD9031D54 /* Engine.swift */ = {
+			path = Engine.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		3105C7F73A24E0763E6F6222 /* NeonReelsWidget */ = {
+			productType = "com.apple.product-type.app-extension";
+			productReference = 58E9555E1F380DF98F5DFDB0 /* NeonReelsWidget.appex */;
+			buildConfigurationList = 2E11C8A0217B415B0B2AC946 /* XCConfigurationList */;
+			productName = NeonReelsWidget;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				AA4CD2A427D8CD23D67D61F9 /* PBXSourcesBuildPhase */,
+				B11DF2D85421B731EDC0ED54 /* PBXFrameworksBuildPhase */,
+				A43D8B636529AB41F37F5D21 /* PBXResourcesBuildPhase */,
+			);
+			dependencies = (
+			);
+			name = NeonReelsWidget;
+			buildRules = (
+			);
+		};
+		83FA2006781298603E1AAADA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.NeonReelsUITests;
+				SDKROOT = iphoneos;
+				TEST_TARGET_NAME = NeonReels;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC74016E6BC0C530B8260B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_CFBundleDisplayName = "Neon Reels";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SDKROOT = iphoneos;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_FILE = Support/AppInfo.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+			};
+			name = Debug;
+		};
+		88BBFFED9F5890567A8F2503 /* WidgetShared/WidgetSnapshot.swift */ = {
+			path = WidgetShared/WidgetSnapshot.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		CAA5F241485B89FDA2649761 /* NeonReels */ = {
+			productType = "com.apple.product-type.application";
+			productReference = 9D995AB899B1DF27719CA819 /* NeonReels.app */;
+			buildConfigurationList = C6580CE2720A6CEE56C69437 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = NeonReels;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				4780FA5E0688B0CCBC31A851 /* PBXSourcesBuildPhase */,
+				C4D6CE1473703CEA874EB539 /* PBXResourcesBuildPhase */,
+				BCD455399DD3CB0032BFF795 /* Embed App Extensions */,
+			);
+			dependencies = (
+				3CA455CDD71ED6AFBB3215F1 /* PBXTargetDependency */,
+			);
+			name = NeonReels;
+			buildRules = (
+			);
+		};
+		E8F90B69721445B445DA47A8 /* WidgetShared/ProgressWidgetView.swift */ = {
+			path = WidgetShared/ProgressWidgetView.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		6EB4DE867FC8D27447EEE1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				SDKROOT = iphoneos;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				CLANG_WARN_EMPTY_BODY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				CLANG_WARN_COMMA = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				MTL_FAST_MATH = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			};
+			name = Release;
+		};
+		B04DAE8CCF3D7CAAC56EFF59 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 75A553BE8B04E7CC01C95F1F /* PuzzleView.swift */;
+		};
+		B11DF2D85421B731EDC0ED54 /* PBXFrameworksBuildPhase */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD3B51248E0A37F571E872A /* NeonReelsApp.swift */ = {
+			path = NeonReelsApp.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		F3F193EE5F27C4D355AA4101 /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BB2AEBFFD2DB476EFEC822 /* PBXBuildFile */,
+				2AB2FAFDCEB275D8227C4C53 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FF71A4FBA36405E1E37DB3 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = ED1EA46CBA3366A33E386058 /* WidgetShared/WidgetIdentity.swift */;
+		};
+		54C763FB8665DCAA9BB85AE5 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			children = (
+				9D995AB899B1DF27719CA819 /* NeonReels.app */,
+				E3F8C5CD1C8275DF70FC0559 /* NeonReelsTests.xctest */,
+				1D76A6166D81CB8F4BCBF5A3 /* NeonReelsUITests.xctest */,
+				58E9555E1F380DF98F5DFDB0 /* NeonReelsWidget.appex */,
+				2438AF64380FC50A66660092 /* NeonReelsWidgetTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		D40B4A5BFFA34C2329531FF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAA5F241485B89FDA2649761 /* NeonReels */;
+			targetProxy = 0474CA098B8E441857CBBC57 /* PBXContainerItemProxy */;
+		};
+		6E161C87B04BA25B636D6380 /* Store.swift */ = {
+			path = Store.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = "<group>";
+		};
+		C0F23B9A14668A8B9C6BE869 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 54CF6BEA49E3ECA02E833591 /* Assets.xcassets */;
+		};
+		9D8BAF7A50038233D8244E1B /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 632C5B65E8AAE28AE249C594 /* CollectionViews.swift */;
+		};
+		D7ADD9937D61872D1DE75423 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 88BBFFED9F5890567A8F2503 /* WidgetShared/WidgetSnapshot.swift */;
+		};
+		BCD455399DD3CB0032BFF795 /* Embed App Extensions */ = {
+			buildActionMask = 2147483647;
+			dstSubfolderSpec = 13;
+			isa = PBXCopyFilesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+			dstPath = "";
+			files = (
+				5FE714F503AC377351AF5B9A /* PBXBuildFile */,
+			);
+			name = "Embed App Extensions";
+		};
+		BEC27F763EB06CDE42119376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeonReels.app/NeonReels";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.NeonReelsTests;
+				SDKROOT = iphoneos;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78610A7DC1FA8B9A1A7ECADC /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = E8F90B69721445B445DA47A8 /* WidgetShared/ProgressWidgetView.swift */;
+		};
+		515B0F65155DFC39C0BF0D74 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 5D0BD9CCF8CF5FEFD9031D54 /* Engine.swift */;
+		};
+		C6580CE2720A6CEE56C69437 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				BC74016E6BC0C530B8260B32 /* Debug */,
+				5848FE9DA38F2866295FF8E0 /* Release */,
+			);
+		};
+		A19A0C5887664A5CC5CDF357 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 8FD3B51248E0A37F571E872A /* NeonReelsApp.swift */;
+		};
+		381130FA75C44E79969A686C /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 6E161C87B04BA25B636D6380 /* Store.swift */;
+		};
+		17ADC30AD30F4EBAEBC00BFE /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CD62DD47416E33BFA1FC05 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD9179139A659335F9F3AE6B /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 543C84AAF5D3731DA752D603 /* NeonReels/WidgetBridge.swift */;
+		};
+		5848FE9DA38F2866295FF8E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				MARKETING_VERSION = 1.0;
+				INFOPLIST_FILE = Support/AppInfo.plist;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				INFOPLIST_KEY_CFBundleDisplayName = "Neon Reels";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				SDKROOT = iphoneos;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle;
+				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
+			};
+			name = Release;
+		};
+		93CD62DD47416E33BFA1FC05 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 984585CCDBB308519DD036CC /* WidgetTests/WidgetTests.swift */;
+		};
+		9194881E5F7184BCF3CE94A8 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				35ACA2E9A5FBE96BCC1EA5E2 /* Debug */,
+				CE1025B8CD0B28D324E6A918 /* Release */,
+			);
+		};
+		58E9555E1F380DF98F5DFDB0 /* NeonReelsWidget.appex */ = {
+			path = NeonReelsWidget.appex;
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B9E15E9F3AB9633AA3E9B5EA /* PBXSourcesBuildPhase */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21C2F5624992F9C59DD6EDD /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA455CDD71ED6AFBB3215F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3105C7F73A24E0763E6F6222 /* NeonReelsWidget */;
+			targetProxy = 0F9B320ED4F3B3CD1C020EF0 /* PBXContainerItemProxy */;
+		};
+		C781BEAD15DF589D92DC73D6 /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = E8F90B69721445B445DA47A8 /* WidgetShared/ProgressWidgetView.swift */;
+		};
+		0474CA098B8E441857CBBC57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FCBAD093C4DBA14B08BB4B /* PBXProject */;
+			remoteGlobalIDString = CAA5F241485B89FDA2649761 /* NeonReels */;
+			remoteInfo = NeonReels;
+			proxyType = 1;
+		};
+		CA847C689516EE4E09CE4B53 /* NeonReels */ = {
+			path = NeonReels;
+			isa = PBXGroup;
+			children = (
+				54CF6BEA49E3ECA02E833591 /* Assets.xcassets */,
+				632C5B65E8AAE28AE249C594 /* CollectionViews.swift */,
+				EC187E1FAC4786C54BA5B04C /* Design.swift */,
+				5D0BD9CCF8CF5FEFD9031D54 /* Engine.swift */,
+				8FD3B51248E0A37F571E872A /* NeonReelsApp.swift */,
+				75A553BE8B04E7CC01C95F1F /* PuzzleView.swift */,
+				6E161C87B04BA25B636D6380 /* Store.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		984585CCDBB308519DD036CC /* WidgetTests/WidgetTests.swift */ = {
+			path = WidgetTests/WidgetTests.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		94C1B9AC5F26D06C0B82D35C /* WidgetExtension/ProgressWidget.swift */ = {
+			path = WidgetExtension/ProgressWidget.swift;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			sourceTree = SOURCE_ROOT;
+		};
+		45BA189E80C7665212978D6A /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+			buildConfigurations = (
+				58C5606EF4EDEB3D343601A0 /* Debug */,
+				6EB4DE867FC8D27447EEE1EC /* Release */,
+			);
+		};
+		37F8991CF493DCA0B8C72C06 /* NeonReelsTests */ = {
+			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = E3F8C5CD1C8275DF70FC0559 /* NeonReelsTests.xctest */;
+			buildConfigurationList = 97660C63E1E98B687920D287 /* XCConfigurationList */;
+			packageProductDependencies = (
+			);
+			productName = NeonReelsTests;
+			isa = PBXNativeTarget;
+			buildPhases = (
+				B9E15E9F3AB9633AA3E9B5EA /* PBXSourcesBuildPhase */,
+			);
+			dependencies = (
+				9D1E9F982B24607C1D4758C4 /* PBXTargetDependency */,
+			);
+			name = NeonReelsTests;
+			buildRules = (
+			);
+		};
+		E3F8C5CD1C8275DF70FC0559 /* NeonReelsTests.xctest */ = {
+			path = NeonReelsTests.xctest;
+			isa = PBXFileReference;
+			includeInIndex = 0;
+			lastKnownFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2438AF64380FC50A66660092 /* NeonReelsWidgetTests.xctest */ = {
+			path = NeonReelsWidgetTests.xctest;
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABFE8BA9F4AFE3213B447B68 /* NeonReelsTests */ = {
+			path = NeonReelsTests;
+			isa = PBXGroup;
+			children = (
+				9CB4A62666591B14E5A93F32 /* EngineTests.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		6331099C8F40D3772741BB1F /* PBXBuildFile */ = {
+			isa = PBXBuildFile;
+			fileRef = 94C1B9AC5F26D06C0B82D35C /* WidgetExtension/ProgressWidget.swift */;
+		};
+		3D5F8391EE8DEAEF33AC405B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13FCBAD093C4DBA14B08BB4B /* PBXProject */;
+			remoteGlobalIDString = CAA5F241485B89FDA2649761 /* NeonReels */;
+			remoteInfo = NeonReels;
+			proxyType = 1;
+		};
+		2E11C8A0217B415B0B2AC946 /* XCConfigurationList */ = {
+			isa = XCConfigurationList;
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+			buildConfigurations = (
+				BE89C093CFAAAD0D6ED50A05 /* Debug */,
+				C1EC3392E5DB08C38E0D73DD /* Release */,
+			);
+		};
+		CE1025B8CD0B28D324E6A918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			name = Release;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeonReels.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NeonReels";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle.widgettests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+				CODE_SIGN_STYLE = Automatic;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+			};
+		};
+	};
+	rootObject = 13FCBAD093C4DBA14B08BB4B /* PBXProject */;
+}

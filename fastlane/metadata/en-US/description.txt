@@ -1,0 +1,11 @@
+Line up the symbols in Neon Reels, an offline, single-player logic puzzle for iPhone and iPad.
+
+Explore three rooms with 40 levels each. Every level is available from the start and has a target row and a move limit. Move the three reels one symbol at a time, then check your center row against the target.
+
+Each room has its own rule: reels move independently in Cherry Club, while Electric Night and Diamond Room link neighboring reels. Find a shortest route to earn three stars, or solve within the limit to earn one or two stars. Your lowest move count is saved as your best result.
+
+Undo refunds a move, and hints show the next step on a shortest path without affecting your rating. Restart an attempt whenever you want.
+
+Visit Daily for a puzzle selected by the UTC date and replay completed dates from local history. Collect five symbol cards in the Album as you complete different standard levels. Home Screen widgets show progress and open your current standard-level puzzle.
+
+Neon Reels requires iOS 17 or later. The app interface is in English (UK).
