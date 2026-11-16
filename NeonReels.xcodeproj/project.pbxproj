@@ -349,7 +349,7 @@
 				);
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle.widget;
 			};
@@ -395,7 +395,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,7 +405,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle.widget;
 			};
@@ -578,9 +578,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_CFBundleDisplayName = "Neon Reels";
@@ -830,7 +830,7 @@
 					"@executable_path/Frameworks",
 				);
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				INFOPLIST_FILE = Support/AppInfo.plist;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -843,7 +843,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				SDKROOT = iphoneos;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neonreels.puzzle;
 				CODE_SIGN_ENTITLEMENTS = Support/App.entitlements;
 			};
