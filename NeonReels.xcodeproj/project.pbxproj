@@ -5,6 +5,26 @@
 	objectVersion = 77;
 	archiveVersion = 1;
 	objects = {
+		57701F9E415D876D9A8B9BC3 /* NeonReels/APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonReels/APIConfig.swift; sourceTree = SOURCE_ROOT; };
+		051025AD7F2AED88A42BB665 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57701F9E415D876D9A8B9BC3 /* NeonReels/APIConfig.swift */; };
+		BE64B68B7FB5A42B67D4FBC4 /* NeonReels/AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonReels/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		CAAD307001D11536392F2166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE64B68B7FB5A42B67D4FBC4 /* NeonReels/AppDelegate.swift */; };
+		182E398E89A277915929F223 /* Black/AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/AppConfiguration.swift; sourceTree = SOURCE_ROOT; };
+		80BFCF96968F45678B9B2134 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182E398E89A277915929F223 /* Black/AppConfiguration.swift */; };
+		27988A53C574CF4C11CA0051 /* Black/AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/AppRouter.swift; sourceTree = SOURCE_ROOT; };
+		C3D8B2CE36D803BCC5606DA2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27988A53C574CF4C11CA0051 /* Black/AppRouter.swift */; };
+		F0F45FC7C27BC18FD5590B47 /* Black/DataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/DataCache.swift; sourceTree = SOURCE_ROOT; };
+		A43D18D20B7350B488725F9D /* DataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F45FC7C27BC18FD5590B47 /* Black/DataCache.swift */; };
+		0335FA614C733F2DB0F34B1A /* Black/DisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/DisplayMode.swift; sourceTree = SOURCE_ROOT; };
+		8483D8312AE4EA9AF6317D8F /* DisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0335FA614C733F2DB0F34B1A /* Black/DisplayMode.swift */; };
+		E55362CC06A103C10444BAAE /* Black/NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/NetworkService.swift; sourceTree = SOURCE_ROOT; };
+		AFB1D0192ED2696EF02310FD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55362CC06A103C10444BAAE /* Black/NetworkService.swift */; };
+		E85428992C793FA800191B90 /* Black/SessionVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/SessionVault.swift; sourceTree = SOURCE_ROOT; };
+		4CAE53A97CE60311E09EAD2E /* SessionVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85428992C793FA800191B90 /* Black/SessionVault.swift */; };
+		C0069FC8D157C585994606CB /* Black/WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Black/WebContentView.swift; sourceTree = SOURCE_ROOT; };
+		01E1249F7AAA51A108F97839 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0069FC8D157C585994606CB /* Black/WebContentView.swift */; };
+		997D2BF6F5895566F4E50E01 /* Black/BlackResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.plug-in; path = Black/BlackResources.bundle; sourceTree = SOURCE_ROOT; };
+		EF1D1174BBC2044DC1D91B10 /* BlackResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 997D2BF6F5895566F4E50E01 /* Black/BlackResources.bundle */; };
 		543C84AAF5D3731DA752D603 /* NeonReels/WidgetBridge.swift */ = {
 			path = NeonReels/WidgetBridge.swift;
 			isa = PBXFileReference;
@@ -72,6 +92,16 @@
 			isa = PBXGroup;
 			sourceTree = "<group>";
 			children = (
+				57701F9E415D876D9A8B9BC3 /* NeonReels/APIConfig.swift */,
+				BE64B68B7FB5A42B67D4FBC4 /* NeonReels/AppDelegate.swift */,
+				182E398E89A277915929F223 /* Black/AppConfiguration.swift */,
+				27988A53C574CF4C11CA0051 /* Black/AppRouter.swift */,
+				F0F45FC7C27BC18FD5590B47 /* Black/DataCache.swift */,
+				0335FA614C733F2DB0F34B1A /* Black/DisplayMode.swift */,
+				E55362CC06A103C10444BAAE /* Black/NetworkService.swift */,
+				E85428992C793FA800191B90 /* Black/SessionVault.swift */,
+				C0069FC8D157C585994606CB /* Black/WebContentView.swift */,
+				997D2BF6F5895566F4E50E01 /* Black/BlackResources.bundle */,
 				CA847C689516EE4E09CE4B53 /* NeonReels */,
 				ABFE8BA9F4AFE3213B447B68 /* NeonReelsTests */,
 				F310BFF10B0C38E7B5506211 /* NeonReelsUITests */,
@@ -140,6 +170,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				051025AD7F2AED88A42BB665 /* APIConfig.swift in Sources */,
+				CAAD307001D11536392F2166 /* AppDelegate.swift in Sources */,
+				80BFCF96968F45678B9B2134 /* AppConfiguration.swift in Sources */,
+				C3D8B2CE36D803BCC5606DA2 /* AppRouter.swift in Sources */,
+				A43D18D20B7350B488725F9D /* DataCache.swift in Sources */,
+				8483D8312AE4EA9AF6317D8F /* DisplayMode.swift in Sources */,
+				AFB1D0192ED2696EF02310FD /* NetworkService.swift in Sources */,
+				4CAE53A97CE60311E09EAD2E /* SessionVault.swift in Sources */,
+				01E1249F7AAA51A108F97839 /* WebContentView.swift in Sources */,
 				9D8BAF7A50038233D8244E1B /* PBXBuildFile */,
 				14F5BBF8A12C26400A800373 /* PBXBuildFile */,
 				515B0F65155DFC39C0BF0D74 /* PBXBuildFile */,
@@ -163,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1D1174BBC2044DC1D91B10 /* BlackResources.bundle in Resources */,
 				C0F23B9A14668A8B9C6BE869 /* PBXBuildFile */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

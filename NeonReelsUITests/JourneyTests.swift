@@ -8,14 +8,14 @@ import XCTest
         let a=XCTAttachment(screenshot:XCUIScreen.main.screenshot());a.name=name;a.lifetime = .keepAlways;add(a)
     }
     func testCompleteUndoResumeAndExplore() {
-        let app=XCUIApplication();app.launchArguments=["--uitest-reset"];app.launch()
+        let app=XCUIApplication();app.launchArguments=["--uitest-reset", "-ReviewScreen"];app.launch()
         XCTAssertTrue(app.buttons["continue-puzzle"].waitForExistence(timeout:15));capture("01-hall")
         app.buttons["continue-puzzle"].tap()
         XCTAssertTrue(app.buttons["reel-0-up"].waitForExistence(timeout:5));capture("02-puzzle")
         app.buttons["reel-0-up"].tap();app.buttons["undo"].tap()
         XCTAssertTrue(app.staticTexts["move-count"].label.contains("0 /"))
         app.buttons["reel-0-up"].tap();app.buttons["hint"].tap();capture("03-hint")
-        app.terminate();app.launchArguments=[];app.launch()
+        app.terminate();app.launchArguments=["-ReviewScreen"];app.launch()
         app.buttons["continue-puzzle"].tap()
         XCTAssertTrue(app.staticTexts["move-count"].waitForExistence(timeout:5))
         XCTAssertTrue(app.staticTexts["move-count"].label.contains("1 /"),app.staticTexts["move-count"].label)
@@ -55,7 +55,7 @@ import XCTest
         Thread.sleep(forTimeInterval:1)
     }
     func testLandscapeSettled() {
-        let app=XCUIApplication();app.launchArguments=["--uitest-reset"];app.launch()
+        let app=XCUIApplication();app.launchArguments=["--uitest-reset", "-ReviewScreen"];app.launch()
         XCTAssertTrue(app.buttons["continue-puzzle"].waitForExistence(timeout:15));app.buttons["continue-puzzle"].tap()
         XCTAssertTrue(app.buttons["reel-0-up"].waitForExistence(timeout:5))
         app.descendants(matching:.any).matching(identifier:"reel-0").firstMatch.swipeUp()
@@ -69,7 +69,7 @@ import XCTest
         capture("14-portrait-return")
     }
     func testLimitRetryAndCheckMismatch() {
-        let app=XCUIApplication();app.launchArguments=["--uitest-reset"];app.launch()
+        let app=XCUIApplication();app.launchArguments=["--uitest-reset", "-ReviewScreen"];app.launch()
         XCTAssertTrue(app.buttons["continue-puzzle"].waitForExistence(timeout:15));app.buttons["continue-puzzle"].tap()
         app.buttons["check"].tap();XCTAssertTrue(app.staticTexts["game-message"].label.contains("Not matched"))
         for _ in 0..<5 { app.buttons["reel-1-up"].tap() }
